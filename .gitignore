@@ -1,0 +1,11 @@
+# 依赖目录（本地安装，不入库）
+node_modules/
+miniprogram_npm/
+
+# 微信开发者工具生成的私有配置（含本机设置，不建议提交）
+project.private.config.json
+
+# 系统与日志文件
+.DS_Store
+Thumbs.db
+*.log
