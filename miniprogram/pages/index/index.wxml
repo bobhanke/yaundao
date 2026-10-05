@@ -1,0 +1,12 @@
+<view class="container">
+  <image src="/images/donman/33761540_161307513109_2.jpg" class="logos" mode="aspectFit"></image>
+  <view class="title" bindtap="change">{{hello}}</view>
+  <view class="choose">
+    <navigator class="jion" url="/pages/create/form">创建小组</navigator>
+    <navigator class="jion" url="/pages/list/form">加入小组</navigator>
+    <navigator class="jion" url="/pages/tip/form">其他小组</navigator>
+    <navigator class="jion" url="/pages/group/form">我的小组</navigator>
+  </view>
+
+  <navigator class="profile-link" url="/pages/form/form">填写资料</navigator>
+</view>

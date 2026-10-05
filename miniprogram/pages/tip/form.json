@@ -1,0 +1,6 @@
+{
+  "__note": "其他小组：只显示我还没加入的小组（前端过滤 listGroups 的 joined 字段），加入后从列表移除",
+  "usingComponents": {},
+  "navigationBarTitleText": "其他小组",
+  "enablePullDownRefresh": true
+}

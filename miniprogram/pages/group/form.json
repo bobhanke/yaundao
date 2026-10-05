@@ -1,0 +1,6 @@
+{
+  "__note": "我的小组：列出我已加入/我创建的小组，数据来自云函数 myGroups；点卡片进「小组详情」",
+  "usingComponents": {},
+  "navigationBarTitleText": "我的小组",
+  "enablePullDownRefresh": true
+}

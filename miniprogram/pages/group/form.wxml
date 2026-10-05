@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="page-title">我的小组</view>
+  <view class="page-desc">这里是你已经加入的小组</view>
+
+  <view class="empty" wx:if="{{!loading && groups.length === 0}}">
+    你还没有加入任何小组，去「加入小组」看看
+  </view>
+
+  <view class="group" wx:for="{{groups}}" wx:key="_id" data-id="{{item._id}}" bindtap="onDetail">
+    <view class="group-head">
+      <view class="group-name">{{item.name}}</view>
+      <view class="group-count">{{item.memberCount}} 人</view>
+    </view>
+
+    <view class="group-intro">{{item.intro}}</view>
+
+    <view class="group-foot">
+      <view class="tag" wx:if="{{item.owner}}">我创建的</view>
+      <view class="tag tag-joined">已加入</view>
+    </view>
+  </view>
+</view>

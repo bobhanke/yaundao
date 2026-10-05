@@ -1,0 +1,5 @@
+{
+  "__note": "创建小组：填名称（必填，≤20 字）/ 简介 / 人数上限，提交给云函数 createGroup，创建者自动入组，成功后跳「我的小组」",
+  "usingComponents": {},
+  "navigationBarTitleText": "创建小组"
+}

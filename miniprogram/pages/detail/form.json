@@ -1,0 +1,5 @@
+{
+  "__note": "小组详情：小组信息 + 成员列表（昵称来自 profiles）+ 加入/退出按钮，用云函数 groupDetail / joinGroup / leaveGroup",
+  "usingComponents": {},
+  "navigationBarTitleText": "小组详情"
+}

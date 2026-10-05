@@ -1,0 +1,6 @@
+{
+  "__note": "加入小组：列出全部小组，可加入，点卡片进详情",
+  "usingComponents": {},
+  "navigationBarTitleText": "加入小组",
+  "enablePullDownRefresh": true
+}

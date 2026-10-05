@@ -1,0 +1,46 @@
+.container {
+  background-color: #f1f1f1;
+  text-align:center;
+  padding: 80rpx;
+}
+
+.logos {
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.title{
+    font-weight: 500;
+    color: #000;
+    font-size: 44rpx;
+    margin: 50rpx 32rpx;
+
+}
+.jion{
+    display: block;
+    height: 100rpx;
+    width: 200rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: rgb(18, 211, 105);
+    margin: 20rpx auto;
+    border-radius: 12rpx;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-link {
+  display: block;
+  width: 200rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 20rpx auto 0;
+  background-color: #ffffff;
+  color: #07c160;
+  border: 1rpx solid #07c160;
+  border-radius: 12rpx;
+}

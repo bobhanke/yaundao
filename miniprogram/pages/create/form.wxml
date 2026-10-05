@@ -1,0 +1,39 @@
+<view class="page">
+  <view class="page-title">创建小组</view>
+  <view class="page-desc">创建成功后你自动成为成员</view>
+
+  <view class="field">
+    <view class="label">小组名称 *</view>
+    <input
+      class="input"
+      placeholder="例如：深圳周末徒步"
+      maxlength="20"
+      value="{{name}}"
+      bindinput="onNameInput"
+    />
+  </view>
+
+  <view class="field">
+    <view class="label">小组简介</view>
+    <textarea
+      class="textarea"
+      placeholder="介绍一下小组的活动内容、时间地点"
+      maxlength="100"
+      value="{{intro}}"
+      bindinput="onIntroInput"
+    ></textarea>
+  </view>
+
+  <view class="field">
+    <view class="label">人数上限（0 表示不限）</view>
+    <input
+      class="input"
+      type="number"
+      placeholder="例如 20"
+      value="{{limit}}"
+      bindinput="onLimitInput"
+    />
+  </view>
+
+  <button class="submit-btn" loading="{{submitting}}" bindtap="onSubmit">创建小组</button>
+</view>

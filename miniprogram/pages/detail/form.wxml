@@ -1,0 +1,28 @@
+<view class="page" wx:if="{{group}}">
+  <view class="card">
+    <view class="name">{{group.name}}</view>
+    <view class="meta">
+      <view class="count">{{group.memberCount}} 人</view>
+      <view class="limit">{{group.limit ? "上限 " + group.limit + " 人" : "人数不限"}}</view>
+    </view>
+    <view class="intro">{{group.intro || "这个小组还没有填写简介"}}</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">成员（{{group.memberCount}}）</view>
+    <view class="member" wx:for="{{group.members}}" wx:key="openid">
+      <view class="member-name">{{item.nickname}}</view>
+      <view class="member-tags">
+        <view class="tag" wx:if="{{item.isOwner}}">创建者</view>
+        <view class="tag tag-me" wx:if="{{item.isMe}}">我</view>
+      </view>
+    </view>
+    <view class="member-empty" wx:if="{{group.memberCount === 0}}">还没有成员</view>
+  </view>
+
+  <button class="action-btn leave" wx:if="{{group.joined && !group.owner}}" bindtap="onLeave">退出小组</button>
+  <button class="action-btn" wx:elif="{{!group.joined}}" bindtap="onJoin">加入小组</button>
+  <view class="owner-tip" wx:else>你是这个小组的创建者</view>
+</view>
+
+<view class="loading" wx:else>加载中...</view>

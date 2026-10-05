@@ -1,0 +1,49 @@
+<view class="body">
+  <form bindsubmit="submit">
+    <view class="section">
+      <view class="title">昵称：</view>
+      <input type="nickname" class="input" name="nickname" placeholder="昵称" />
+    </view>
+
+    <view class="section">
+      <view class="title">性别：</view>
+      <radio-group class="mg" name="gender">
+        <label>
+          <radio value="nan" />
+          男
+        </label>
+        <label>
+          <radio value="nv" />
+          女
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="section">
+      <view class="title">出生年：</view>
+      <picker bindchange="datachange" fields="years" value="{{date}}" class="input" name="date" mode="date">
+        <view class="picker">{{date}}</view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <view class="title">地区：(可选)</view>
+      <picker bindchange="regionchange" value="{{region}}" mode="region" level="province" class="input" name="region">
+        <view class="picker">当前选择：{{region}}</view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <view class="title">可以添加到你的联系方式：</view>
+      <input class="input" name="code" placeholder="以防小组成员找不到你" />
+    </view>
+
+    <view class="section">
+      <view class="title">你的基础情况</view>
+      <textarea class="input textarea" name="info" placeholder="介绍一下你的基本情况"></textarea>
+    </view>
+
+    <button class="submit-btn"  type="primary" form-type="submit">提交</button>
+    <button form-type="reset">重置</button>
+  </form>
+</view>
